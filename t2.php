@@ -1,10 +1,12 @@
 <?php
-session_start();
+//session_start();
 require('csrf.php');
 $token = new Csrf(true, true, true);
 echo $token->get_token_name();
+echo '<br>';
 echo $token->get_token_value();
-echo $token->create_link('domain.com/admin.php');
+echo '<br>';
+echo $token->create_link('localhost/php_token/t2.php');
 
 ?>
      
@@ -16,7 +18,7 @@ echo $token->create_link('domain.com/admin.php');
 </head>
 <body>
     <form action="" method="post">
-    <dl>
+    <dl>954q    ewr
         <dt><label for="username">Username:</label></dt>
         <dd><input type="text" name="username" id="username" /></dd>
         <dt><label for="username">Password:</label></dt>

@@ -2,7 +2,7 @@
 class Csrf 
 {
     // Tên kiểm tra token
-    private $_csrf_token_name    = 'cms-token-name';
+    private $_csrf_token_name = 'cms-token-name';
      
     // Thời gian sống của session, 3600 = 1h
     private $_csrf_time_live = 3600;
